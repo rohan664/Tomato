@@ -1,0 +1,13 @@
+const RESPONSE_STATUS_SUCCESS = 1
+const RESPONSE_STATUS_FAILURE = 0
+
+// expiry time for access and refresh token
+const ACCESS_EXPIRY_TIME = "15m"
+const REFRESH_EXPIRY_TIME = "60m"
+
+module.exports = {
+    RESPONSE_STATUS_FAILURE,
+    RESPONSE_STATUS_SUCCESS,
+    ACCESS_EXPIRY_TIME,
+    REFRESH_EXPIRY_TIME
+}

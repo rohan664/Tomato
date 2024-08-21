@@ -1,0 +1,116 @@
+.account-icon {
+    position: absolute;
+    left: -27px;
+    background-color: tomato;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.account-info {
+    background-color: #efefef;
+    position: relative;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.account-img img {
+    width: 180px;
+    height: 140px;
+}
+
+.account {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+}
+
+.user-info-1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+    row-gap: 1rem;
+    margin-right: 5px;
+}
+
+.user-info-1 input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 5px;
+    font-weight: 600;
+}
+
+.address-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.address-button button {
+    background-color: tomato;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-top: 1rem;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+.login {
+    text-align: center;
+    border: 2px solid #00c900;
+    padding: 10px;
+    color: #00c900;
+    width: 10rem;
+}
+
+.signup {
+    text-align: center;
+    background-color: #00c900;
+    padding: 10px;
+    color: white;
+    width: 10rem;
+}
+
+.button a {
+    text-decoration: none;
+}
+
+.button {
+    display: flex;
+    gap: 1rem;
+}
+
+.account-icon svg {
+    color: white;
+}
+
+@media (max-width:720px) {
+    .account-img img {
+        display: none;
+    }
+
+    .account-icon {
+        display: none;
+    }
+
+    .account-info {
+        padding: 10px;
+    }
+
+    .button {
+        display: flex;
+        flex-direction: column;
+    }
+}

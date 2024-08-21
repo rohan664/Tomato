@@ -1,0 +1,225 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px;
+}
+
+.navbar-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #49557e;
+}
+
+.navbar-right {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    cursor: pointer;
+}
+
+.btn {
+    outline: none;
+    background-color: transparent;
+    font-size: 16px;
+    padding: 0.5rem 2rem;
+    border: none;
+    color: #49557e;
+    border: 1px solid tomato;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: tomato;
+    color: white;
+}
+
+.navbar .active {
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid tomato;
+}
+
+.navbar .list {
+    padding-bottom: 0.5rem;
+    cursor: pointer;
+}
+
+.hide {
+    padding-bottom: 0.5rem;
+    color: red;
+    cursor:not-allowed;
+}
+
+.navbar-basket-icon {
+    position: relative;
+}
+
+.navbar-basket-icon .dot {
+    position: absolute;
+    min-height: 10px;
+    min-width: 10px;
+    background-color: tomato;
+    border-radius: 5px;
+    top: -8px;
+    right: -8px;
+}
+
+.navbar-list a {
+    text-decoration: none;
+    color: #49557e;
+}
+
+.user-profile-container {
+    position: relative;
+}
+
+.user-name p {
+    font-size: medium;
+    color: tomato;
+    font-weight: 600;
+}
+
+.user-profile-card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    right: 1px;
+    top: 40px;
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    width: 18rem;
+    border-radius: 10px;
+    padding: 0px 10px;
+    box-shadow: 0px 0px 10px 1.5px #ddddef;
+    border: 1px solid tomato;
+
+}
+
+.user-name-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: #ff6347;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.logout {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.logout-container {
+    width: 100%;
+    margin: 8px 5px;
+    border-radius: 10px;
+    background-color: #461220;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 0px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0px;
+    width: 100%;
+}
+
+.logout img {
+    height: 20px;
+}
+
+.hide-profile-card {
+    display: none;
+}
+
+.user-name-icon p {
+    font-size: 30px;
+}
+
+.search-input {
+    display: flex;
+    /* box-shadow: 0px 0px 8px rgb(222, 221, 221); */
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.search-input input {
+    width: 0;
+    outline: none;
+    border: none;
+    transition: 0.8s;
+    font-weight: 600;
+}
+
+.search-input:hover {
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgb(207, 207, 207);
+}
+
+.search-input:hover input {
+    width: 250px;
+    padding: 5px;
+}
+
+@media (max-width:1050px) {
+    .navbar .logo {
+        width: 140px;
+    }
+
+    .navbar-list {
+        gap: 20px;
+        font-size: 17px;
+    }
+
+    .navbar-right {
+        gap: 30px;
+    }
+    .navbar-right img {
+        width: 22px;
+    }
+    .navbar-right button {
+        padding: 8px 25px;
+    }
+}
+
+@media (max-width:900px) {
+    .navbar .logo {
+        width: 140px;
+    }
+
+    .navbar-list {
+        gap: 15px;
+        font-size: 16px;
+    }
+
+    .navbar-right {
+        gap: 20px;
+    }
+    .navbar-right img {
+        width: 20px;
+    }
+    .navbar-right button {
+        padding: 0px 4px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width:720px) {
+    .navbar-list {
+        display: none;
+    }
+}
+
+
